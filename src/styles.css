@@ -2,4 +2,37 @@
 body, html {
     margin:0;
     padding: 0;
+ 
+}
+
+/*COLORES DE LA TARGETA*/
+.saturation-lightness {
+    display: none!important;
+}
+
+.hue-alpha box {
+    display: none!important;
+}
+.hex-text{
+    display: none!important;
+}
+.selected-color-background{
+    display:none;
+}
+.left{
+    display: none;
+}
+.selected-color{
+    display: none;
+}
+.right{
+    display: none;
+}
+.type-policy{
+    display: none;
+}
+
+input:focus{
+    
+    outline-color: #3d393821;
 }

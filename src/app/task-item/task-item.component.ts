@@ -9,16 +9,33 @@ import {DataService} from '../data.service';
 export class TaskItemComponent implements OnChanges {
   @Input() data: Task;
   private dataService;
+  private editing:boolean = false;
   constructor(dataServ: DataService) {
     this.dataService = dataServ;
   }
 
+
+  
   ngOnChanges(changes) {
     // console.log(changes)
+
   }
 
   onRemoveTask(){
     this.dataService.removeTask(this.data);
   }
+  editText(){
+    this.editing = true;
+  }
+  saveText() {
+    this.editing = false;
+    this.dataService.save();
+  }
+
+oncompleted(){
+  this.dataService.save();
+}
 
 }
+
+

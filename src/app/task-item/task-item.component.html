@@ -1,7 +1,13 @@
-<div class="taskItem {{data.completed ? 'completed' : ''}}"
-     id="{{data.taskId}}">
-    <button (click)="onRemoveTask()">X</button>
-    <div class="taskText">
-        {{data.text}}
-    </div>
+<div class="taskItem {{data.completed ? 'completed' : ''}}" id="{{data.taskId}}">
+  <button (click)="onRemoveTask()">X</button>
+  <div class="taskText" (click)="editText()" *ngIf="!editing">
+    {{data.text}}
+
+  </div>
+  <input *ngIf="editing" [(ngModel)]="data.text" (keyup.enter)="saveText()">
+  <input type="checkbox" id="check" [(ngModel)]="data.completed" (change)="oncompleted()">
+  <div class="colores">
+    <span [style.background]="data.color" [cpPresetColors]="['#4751ff91','#ff9800','#2889e9','#e920e9','#fff500','#009688']"
+      [(colorPicker)]="data.color" (colorPickerClose)="dataService.save()"> </span>
+  </div>
 </div>

@@ -2,13 +2,37 @@
     display: flex;
     flex-direction: row;
     padding: 10px 0;
+ 
+  
 }
 
 .taskItem button {
-    margin-right: 10px
+    margin-right: 10px;
+    background-color: rgb(184, 179, 179);
+    
 }
-.completed  {
+.completed {
     opacity: 0.6;
     color: grey;
     text-decoration: line-through;
+    
 }
+.colores span{
+    display: inline-block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: solid 1px black;
+ 
+}
+
+    
+
+
+
+
+
+
+
+
+

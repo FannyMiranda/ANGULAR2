@@ -1,6 +1,11 @@
 .list {
     width: 250px;
     margin: 10px;
-    background: white;
+    background: #ffffffd1;
     padding: 20px;
+}
+
+input:focus{
+    
+    outline-color: #3d393821;
 }

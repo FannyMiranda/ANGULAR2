@@ -5,13 +5,17 @@
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    
+    
 }
 
 header {
-    background: tomato;
+    background: #3d393821;
     display: flex;
     justify-content: flex-end;
     padding: 30px;
+    background: url("src/assets/images/ladrillos.jpg")
+    
 }
 
 .lists {
@@ -21,4 +25,20 @@ header {
     justify-content: center;
     border: 1px solid grey;
     padding: 30px;
+    background:url("src/assets/images/lapiz-touch-mas-libreta-y-goma-de-borrar-D_NQ_NP_231311-MLC20520666340_122015-F.jpg");
+
+  
 }
+
+input{
+    border-color: #b5aead;
+    
+}
+input:focus{
+    
+    outline-color: #d2cac821;
+}
+
+
+
+
